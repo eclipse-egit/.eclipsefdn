@@ -22,6 +22,30 @@ orgs.newOrg('eclipse-egit') {
     },
   },
   _repositories+:: [
+    orgs.newRepo('egit') {
+      allow_merge_commit: true,
+      auto_init: false,
+      default_branch: "master",
+      description: "EGit, the git integration of Eclipse IDE",
+      has_discussions: true,
+      homepage: "https://www.eclipse.org/egit/",
+    },
+    orgs.newRepo('egit-github') {
+      allow_merge_commit: true,
+      auto_init: false,
+      default_branch: "master",
+      description: "EGit GitHub API client",
+      has_discussions: true,
+      homepage: "https://www.eclipse.org/egit/",
+    },
+    orgs.newRepo('egit-pipelines') {
+      allow_merge_commit: true,
+      auto_init: false,
+      default_branch: "master",
+      description: "CI pipelines for EGit",
+      has_discussions: true,
+      homepage: "https://www.eclipse.org/egit/",
+    },
     orgs.newRepo('egit-website') {
       allow_merge_commit: true,
       allow_update_branch: false,
