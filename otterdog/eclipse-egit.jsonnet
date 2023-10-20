@@ -7,9 +7,6 @@ orgs.newOrg('eclipse-egit') {
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "",
     members_can_change_project_visibility: false,
-    members_can_change_repo_visibility: false,
-    members_can_create_teams: false,
-    members_can_delete_repositories: false,
     name: "Eclipse EGit",
     packages_containers_internal: false,
     packages_containers_public: false,
@@ -24,16 +21,12 @@ orgs.newOrg('eclipse-egit') {
   _repositories+:: [
     orgs.newRepo('egit') {
       allow_merge_commit: true,
-      auto_init: false,
-      default_branch: "master",
       description: "EGit, the git integration of Eclipse IDE",
       has_discussions: true,
       homepage: "https://www.eclipse.org/egit/",
     },
     orgs.newRepo('egit-github') {
       allow_merge_commit: true,
-      auto_init: false,
-      default_branch: "master",
       description: "EGit GitHub API client",
       has_discussions: true,
       homepage: "https://www.eclipse.org/egit/",
