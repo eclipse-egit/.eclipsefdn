@@ -40,7 +40,6 @@ orgs.newOrg('eclipse-egit') {
     },
     orgs.newRepo('egit-pipelines') {
       allow_merge_commit: true,
-      auto_init: false,
       default_branch: "master",
       description: "CI pipelines for EGit",
       has_discussions: true,
