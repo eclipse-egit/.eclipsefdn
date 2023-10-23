@@ -18,26 +18,34 @@ orgs.newOrg('eclipse-egit') {
       default_workflow_permissions: "write",
     },
   },
+  webhooks+: [
+    orgs.newOrgWebhook('https://ci.eclipse.org/egit/github-webhook/') {
+      content_type: "json",
+      events+: [
+        "pull_request",
+        "push"
+      ],
+    },
+  ],
   _repositories+:: [
     orgs.newRepo('egit') {
       allow_merge_commit: true,
+      default_branch: "master",
       description: "EGit, the git integration of Eclipse IDE",
       has_discussions: true,
       homepage: "https://www.eclipse.org/egit/",
     },
     orgs.newRepo('egit-github') {
       allow_merge_commit: true,
+      default_branch: "master",
       description: "EGit GitHub API client",
       has_discussions: true,
       homepage: "https://www.eclipse.org/egit/",
     },
     orgs.newRepo('egit-permissions') {
-      auto_init: false,
-      allow_forking: false,
       allow_merge_commit: true,
       default_branch: "master",
       description: "GerritHub permissions for EGit repositories",
-      has_discussions: false,
       homepage: "https://www.eclipse.org/egit/",
     },
     orgs.newRepo('egit-pipelines') {
