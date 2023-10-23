@@ -31,6 +31,15 @@ orgs.newOrg('eclipse-egit') {
       has_discussions: true,
       homepage: "https://www.eclipse.org/egit/",
     },
+    orgs.newRepo('egit-permissions') {
+      auto_init: false,
+      allow_forking: false,
+      allow_merge_commit: true,
+      default_branch: "master",
+      description: "GerritHub permissions for EGit repositories",
+      has_discussions: false,
+      homepage: "https://www.eclipse.org/egit/",
+    },
     orgs.newRepo('egit-pipelines') {
       allow_merge_commit: true,
       default_branch: "master",
