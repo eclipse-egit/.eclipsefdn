@@ -29,6 +29,7 @@ orgs.newOrg('eclipse-egit') {
   _repositories+:: [
     orgs.newRepo('egit') {
       allow_merge_commit: true,
+      default_branch: "master",
       description: "EGit, the git integration of Eclipse IDE",
       has_discussions: true,
       homepage: "https://www.eclipse.org/egit/",
