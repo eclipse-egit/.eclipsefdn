@@ -33,7 +33,7 @@ orgs.newOrg('eclipse-egit') {
           "allows_force_pushes": true,
           "pattern": "*",
           "push_restrictions": [
-            "eclipse-egit-bot"
+            "@eclipse-egit-bot"
           ],
           "restricts_pushes": true
         }
@@ -54,7 +54,7 @@ orgs.newOrg('eclipse-egit') {
           "allows_force_pushes": true,
           "pattern": "*",
           "push_restrictions": [
-            "eclipse-egit-bot"
+            "@eclipse-egit-bot"
           ],
           "restricts_pushes": true
         }
@@ -75,7 +75,7 @@ orgs.newOrg('eclipse-egit') {
           "allows_force_pushes": true,
           "pattern": "*",
           "push_restrictions": [
-            "eclipse-egit-bot"
+            "@eclipse-egit-bot"
           ],
           "restricts_pushes": true
         }
@@ -95,7 +95,7 @@ orgs.newOrg('eclipse-egit') {
           "allows_force_pushes": true,
           "pattern": "*",
           "push_restrictions": [
-            "eclipse-egit-bot"
+            "@eclipse-egit-bot"
           ],
           "restricts_pushes": true
         }
@@ -117,7 +117,7 @@ orgs.newOrg('eclipse-egit') {
           "allows_force_pushes": true,
           "pattern": "*",
           "push_restrictions": [
-            "eclipse-egit-bot"
+            "@eclipse-egit-bot"
           ],
           "restricts_pushes": true
         }
