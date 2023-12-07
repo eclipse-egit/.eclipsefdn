@@ -112,6 +112,16 @@ orgs.newOrg('eclipse-egit') {
     orgs.newRepo('egit-website') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      "branch_protection_rules": [
+        {
+          "allows_force_pushes": true,
+          "pattern": "*",
+          "push_restrictions": [
+            "@eclipse-egit-bot"
+          ],
+          "restricts_pushes": true
+        }
+      ],
       default_branch: "master",
       delete_branch_on_merge: false,
       secret_scanning: "disabled",
