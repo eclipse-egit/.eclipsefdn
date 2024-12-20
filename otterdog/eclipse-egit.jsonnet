@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-egit') {
+orgs.newOrg('technology.egit', 'eclipse-egit') {
   settings+: {
     description: "",
     name: "Eclipse EGit",
