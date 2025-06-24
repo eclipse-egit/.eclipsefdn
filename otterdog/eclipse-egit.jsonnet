@@ -25,7 +25,7 @@ orgs.newOrg('technology.egit', 'eclipse-egit') {
       default_branch: "master",
       description: "EGit, the git integration of Eclipse IDE",
       has_discussions: true,
-      homepage: "https://www.eclipse.org/egit/",
+      homepage: "https://projects.eclipse.org/projects/technology.egit",
       workflows+: {
         default_workflow_permissions: "write",
       },
